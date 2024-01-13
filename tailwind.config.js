@@ -6,8 +6,7 @@ export default {
     "./src/components/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      color: {
+      colors: {
         'borderHeader': "#B91BBC",
         'body-color-blackDark': "#110F0F",
         'body-color-blackLight': "#262127",
@@ -16,8 +15,10 @@ export default {
         'text-color-purpleLight': "#D740E4",
         'form-box-color': "#423D3D",
         'form-text-color': "#BFB7B7",
-      }
-    },
+      },
+      fontFamily: {
+
+      },
   },
   plugins: [],
 }

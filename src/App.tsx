@@ -1,5 +1,6 @@
 import './App.css'
 import  NavBar  from './components/NavBar'
+import Home from './components/Home'
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
 
 
       <main>
-
+        <Home />
       </main>
     </div>
   )
