@@ -1,6 +1,6 @@
 const NavBar = () => {
   return (
-    <div className='navBar bg-body-color-blackLight h-full w-full py-2 border-b-4 border-borderHeader'>
+    <div className='navBar sticky bg-body-color-blackLight h-full w-full py-2 border-b-4 border-borderHeader' >
       <div className=" header-container flex flex-row justify-around ">
           <div>
               <img className="w-11 h-11" 
