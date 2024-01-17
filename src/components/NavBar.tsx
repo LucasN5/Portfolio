@@ -4,7 +4,7 @@ const NavBar = () => {
       <div className=" header-container flex flex-row justify-around ">
           <div>
               <img className="w-11 h-11" 
-              src="./src/assets/20231026_213103_0000.png" 
+              src="./src/assets/img/20231026_213103_0000.png" 
               alt="Logo image" 
               />
           </div>
