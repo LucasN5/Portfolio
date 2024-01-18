@@ -1,0 +1,54 @@
+{
+    "header": {
+        "navbar" : {
+            "home": "Início",
+            "about": "Sobre mim",
+            "projects": "Projetos",
+            "skills": "Habilidades",
+            "certificate": "Certificados",
+            "contact": "Contatos"
+        }
+    },
+
+    "body": {
+        "homeSection": {
+            "job": "Desenvolvedor Front-end"
+        },
+
+        "aboutSection": {
+            "aboutTitle" : "Sobre mim",
+            "aboutText": "Apaixonado por tecnologia decidi seguir esta carreira da programação e encontrei minha paixão que é o front-end. Desenvolvo interfaces modernas e de alta qualidade."
+        },
+
+        "projectSection": {
+            "projectTitle": "Projetos",
+            "projectTexts": "lorem"
+        },
+
+        "skillsSection": {
+            "skillsTitle": "Habilidades"
+        },
+
+        "certificateSection": {
+            "certificateTittle": "Formação",
+            "certificateText":"",
+            "certificateText1":"",
+            "certificateText2":""
+        },
+
+        "contactSection": {
+            "contactTitle": "Contato",
+            "contactEmail": "E-mail para contato",
+            "contactAlternative": "Redes para contato",
+            
+            "contactForm": {
+                "formName": "Digite seu nome",
+                "formEmail": "Digite seu melhor e-mail",
+                "formSubject": "Digite o assunto",
+                "formMessage": "Digite sua mensagem",
+                "formSend": "Enviar"
+            }
+        }
+    }
+
+}

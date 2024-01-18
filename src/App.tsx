@@ -7,13 +7,14 @@ function App() {
 
   return (
     <div>
-      <header className=''>
+      <header className='fixed w-full'>
         <NavBar />
       </header>
 
 
       <main>
         <Home />
+        
       </main>
     </div>
   )

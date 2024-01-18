@@ -1,0 +1,54 @@
+{
+    "header": {
+        "navbar" : {
+            "home": "Home",
+            "about": "About me",
+            "projects": "Projects",
+            "skills": "Skills",
+            "certificate": "Certificates",
+            "contact": "Contacts"
+        }
+    },
+
+    "body": {
+        "homeSection": {
+            "job": "Front-end Developer"
+        },
+
+        "aboutSection": {
+            "aboutTitle" : "About me",
+            "aboutText": "Passionate about technology, I decided to pursue this career in programming and found my passion, which is front-end. I develop modern, high-quality interfaces."
+        },
+
+        "projectSection": {
+            "projectTitle": "Projects",
+            "projectTexts": "lorem"
+        },
+
+        "skillsSection": {
+            "skillsTitle": "Skills"
+        },
+
+        "certificateSection": {
+            "certificateTittle": "Certificates",
+            "certificateText":"",
+            "certificateText1":"",
+            "certificateText2":""
+        },
+
+        "contactSection": {
+            "contactTitle": "Contact",
+            "contactEmail": "E-mail for contact",
+            "contactAlternative": "Alternative ways of contact",
+            
+            "contactForm": {
+                "formName": "Type your name",
+                "formEmail": "Type your best e-mail",
+                "formSubject": "Type the subject",
+                "formMessage": "Type your message",
+                "formSend": "Send"
+            }
+        }
+    }
+
+}

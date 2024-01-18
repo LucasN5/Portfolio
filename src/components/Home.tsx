@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faFile } from '@fortawesome/free-regular-svg-icons'
 
 const Home = () => {
   return (
@@ -10,15 +10,15 @@ const Home = () => {
  
       <div className="h-screen flex flex-row justify-center gap-40 items-center">
 
-          <div className="  flex flex-col items-center ">
-            <h1 className="text-4xl text-Whiter">Lucas Nunes</h1>
-            <h2 className=" text-text-color-purpleLight text-2xl">Desenvolvedor Front-end</h2>
+          <div className="  flex flex-col items-center gap-1">
+            <h1 className="text-5xl text-Whiter">Lucas Nunes</h1>
+            <h2 className=" text-text-color-purpleLight text-3xl">Desenvolvedor Front-end</h2>
           
-            <ul className='flex flex-row gap-2 pr-48 '>
-              <a><li><FontAwesomeIcon icon={faLinkedin}  style={{color: "#5c5858",}} size="2xl" /></li></a>
-              <a><li><FontAwesomeIcon icon={faSquareGithub} style={{color: "#5c5858",}}  size="2xl" className=' ring-1 ring-borderHeader '/></li></a>
-              <a><li><FontAwesomeIcon icon={faSquareWhatsapp} style={{color: "#5c5858",}}  size="2xl" /></li></a>
-              <a><li></li></a>
+            <ul className='flex flex-row gap-3 pr-28 pt-2'>
+              <a><li><FontAwesomeIcon icon={faLinkedinIn }  style={{color: "#D740E4",}} size="xl" className=' ring-2 ring-borderHeader p-1.5 px-2 w-7 h-7 rounded-md '/></li></a>
+              <a><li><FontAwesomeIcon icon={faGithub} style={{color: "#D740E4",}}  size="xl" className=' ring-2 ring-borderHeader p-1.5  px-2 w-7 h-7 rounded-md'/></li></a>
+              <a><li><FontAwesomeIcon icon={faWhatsapp} style={{color: "#D740E4",}}  size="xl" className=' ring-2 ring-borderHeader p-1.5 px-2 w-7 h-7 rounded-md' /></li></a>
+              <a><li><FontAwesomeIcon icon={faFile} style={{color: "#D740E4",}}  size="xl" className=' ring-2 ring-borderHeader p-1.5 px-2 w-7 h-7 rounded-md'/></li></a>
             </ul>
           </div>
 
