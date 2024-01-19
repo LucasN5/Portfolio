@@ -9,13 +9,16 @@ function App() {
     <div>
       <header className='fixed w-full'>
         <NavBar />
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </header>
 
-
+    <body>
       <main>
         <Home />
         
       </main>
+      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    </body>
     </div>
   )
 }

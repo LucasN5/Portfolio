@@ -22,7 +22,9 @@
 
         "projectSection": {
             "projectTitle": "Projects",
-            "projectTexts": "lorem"
+            "projectTexts": "",
+            "projectTexts1":"",
+            "projectTexts2":""
         },
 
         "skillsSection": {

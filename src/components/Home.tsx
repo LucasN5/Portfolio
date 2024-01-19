@@ -4,6 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-regular-svg-icons'
 
+
 const Home = () => {
   return (
     <div className="home h-screen bg-body-color-blackDark">
@@ -26,6 +27,7 @@ const Home = () => {
             <img src="./src/assets/img/pfpPortfolioTeste.png" className="w-72 h-72"/>
           </div>
 
+       
       </div>
 
     </div>
