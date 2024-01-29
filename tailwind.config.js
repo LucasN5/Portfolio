@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/components/*.{js,ts,jsx,tsx}",
-    "'node_modules/flowbite-react/lib/esm/**/*.js'",
+    "./node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
       colors: {
