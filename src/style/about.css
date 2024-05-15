@@ -1,0 +1,26 @@
+.about {
+  background-color: var(--body-color-black-dark);
+  height: 80vh;
+}
+
+.aboutTittle {
+  color: var(--whiter);
+  font-family: "Montserrat";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.aboutText {
+  color: var(--whiter);
+  font-family: "Hint";
+  font-size: 18px;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}

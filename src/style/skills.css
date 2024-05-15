@@ -1,0 +1,13 @@
+.skills {
+  background-color: var(--body-color-black-dark);
+  height: 80vh;
+}
+
+.skills > h3 {
+  color: var(--whiter);
+  font-family: "Montserrat";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}

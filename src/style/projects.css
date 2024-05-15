@@ -1,0 +1,30 @@
+.projects {
+  background-color: var(--body-color-black-light);
+  height: 80vh;
+}
+
+.projects > h3 {
+  color: var(--whiter);
+  font-family: "Montserrat";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 35px;
+  background-color: ;
+  height: 40vh;
+  justify-content: center;
+}
+
+.projectsContainer > div {
+  border: 1px solid red;
+  text-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
