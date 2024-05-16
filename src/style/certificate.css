@@ -1,13 +1,137 @@
 .certificate {
   background-color: var(--body-color-black-light);
-  height: 80vh;
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  padding: 50px 0;
 }
 
-.certificate > h3 {
+.certificate .tittleCertificate {
   color: var(--whiter);
   font-family: "Montserrat";
   font-size: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 5rem;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.containerCertificate {
+  width: 70%;
+  height: auto;
+  margin: auto 0;
+  position: relative;
+}
+
+.containerCertificate > ul {
+  list-style: none;
+}
+
+.containerCertificate ul::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(91, 14, 216, 0.767),
+    rgba(238, 12, 200, 0.747)
+  );
+}
+
+.containerCertificate > ul li {
+  width: 50%;
+  height: auto;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 1px 1px 15px #000;
+  position: relative;
+  z-index: 99;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+ul li:nth-child(even) .circleCertification {
+  transform: translate(-50%, -50%);
+  left: -30px;
+}
+
+ul li:nth-child(odd) .circleCertification {
+  transform: translate(50%, -50%);
+  right: -30px;
+}
+
+.containerCertificate ul li:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.containerCertificate ul li .circleCertification {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e100ff7a;
+  top: 0;
+  display: grid;
+  place-items: center;
+}
+
+.circleCertification::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #7f00ff;
+  border-radius: 50%;
+}
+
+ul li .dateCertification {
+  position: absolute;
+  width: 130px;
+  height: 33px;
+  background-image: linear-gradient(to right, #7f00ff, #e100ff);
+  border-radius: 15px;
+  top: -45px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 13px;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
+}
+
+.containerCertificate ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  text-align: right;
+  transform: translateX(-30px);
+}
+
+ul li:nth-child(odd) .dateCertification {
+  right: 20px;
+}
+
+.containerCertificate ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(30px);
+}
+
+ul li .tittleCertificate {
+  font-size: 17px;
+  color: rgb(91, 14, 216);
+}
+
+ul li p {
+  font-size: 13px;
+  color: #666;
+  line-height: 18px;
+  margin: 6px 0 4px 0;
+}
+
+ul li a {
+  font-size: 13px;
+  text-decoration: none;
+  color: rgb(18, 54, 214);
+  transition: all 0.3s ease;
 }
