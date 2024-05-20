@@ -45,12 +45,27 @@
   width: 50%;
   height: auto;
   padding: 15px 20px;
-  background-color: #fff;
+  background-color: var(--body-color-black-dark);
   box-shadow: 1px 1px 15px #000;
   position: relative;
   z-index: 99;
   border-radius: 15px;
   margin-bottom: 30px;
+}
+
+.certificationTittle {
+  color: var(--whiter);
+  font-family: "Montserrat";
+}
+
+.containerCertificate ul li p {
+  color: var(--whiter);
+  font-family: "Hind";
+}
+
+.containerCertificate ul li a {
+  color: var(--text-color-purple-light);
+  font-family: "Hind";
 }
 
 ul li:nth-child(even) .circleCertification {
@@ -134,4 +149,60 @@ ul li a {
   text-decoration: none;
   color: rgb(18, 54, 214);
   transition: all 0.3s ease;
+}
+
+@media only screen and (min-width: 798px) and (max-width: 1100px) {
+  .containerCertificate {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .containerCertificate {
+    width: 70%;
+    transform: translateX(20px);
+  }
+
+  .containerCertificate ul::after {
+    left: -40px;
+  }
+
+  .containerCertificate ul li {
+    width: 100%;
+    float: none;
+    clear: none;
+    margin-bottom: 80px;
+  }
+
+  .containerCertificate ul li .circleCertification {
+    left: -40px;
+    transform: translate(-50%, -50%);
+  }
+
+  .containerCertificate ul li .dateCertification {
+    left: 20px;
+  }
+
+  .containerCertificate ul li:nth-child(odd) {
+    transform: translateX(0px);
+    text-align: left;
+  }
+
+  .containerCertificate ul li:nth-child(even) {
+    transform: translateX(0px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .containerCertificate {
+    width: 80%;
+  }
+
+  .containerCertificate ul::after {
+    left: -20px;
+  }
+
+  .containerCertificate ul li .circleCertification {
+    left: -20px;
+  }
 }

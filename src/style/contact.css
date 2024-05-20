@@ -12,6 +12,12 @@
   padding: 5rem;
 }
 
+.contactForm > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footerContainer {
   display: flex;
   align-items: center;
