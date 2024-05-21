@@ -1,6 +1,6 @@
 .contact {
   background-color: var(--body-color-black-dark);
-  height: 80vh;
+  height: 90vh;
 }
 
 .contact > h3 {
@@ -9,13 +9,47 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  padding: 5rem;
+  padding: 3rem;
 }
 
-.contactForm > form {
+.containerForm {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 20px;
   align-items: center;
+}
+
+.inputForm {
+  width: 35rem;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--form-box-color);
+}
+
+::placeholder {
+  color: var(--form-text-color);
+}
+
+#messageForm::placeholder {
+}
+
+#messageForm {
+  width: 35rem;
+  height: 2rem;
+  padding-bottom: 110px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: var(--form-box-color);
+}
+
+#buttonForm {
+  border-style: none;
+  border-radius: 20px;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .footerContainer {

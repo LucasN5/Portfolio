@@ -61,6 +61,7 @@ header {
   justify-content: space-between;
   style: none;
   list-style-type: none;
+  margin-top: 5px;
 }
 
 .photo {

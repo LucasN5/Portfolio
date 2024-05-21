@@ -43,11 +43,10 @@
           <h1>Lucas Nunes</h1>
           <h3>Desenvolvedor front-end</h3>
           <ul class="contactIcons">
-            <li><img src="./public/svg/envelope-solid.svg" /></li>
-            <li><img src="./public/svg/cv.svg" /></li>
-            <li><img src="./public/svg/github.svg" /></li>
-            <li><img src="./public/svg/linkedln.svg" /></li>
-            <li><img src="./public/svg/zap.svg" /></li>
+            <li><img src="./src/svg/cv.svg" /></li>
+            <li><img src="./src/svg/github.svg" /></li>
+            <li><img src="./src/svg/linkedln.svg" /></li>
+            <li><img src="./src/svg/zap.svg" /></li>
           </ul>
         </div>
 
@@ -95,16 +94,51 @@
 
       <div class="skills">
         <h3>Habilidades</h3>
-        <div class="skillsContainer">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="containerSkills">
+          <div>
+            <p>HTML</p>
+            <img class="iconSkills" src="./src/svg/html.svg" />
+          </div>
+
+          <div>
+            <p>CSS</p>
+            <img class="iconSkills" src="./src/svg/css.svg" />
+          </div>
+
+          <div>
+            <p>Javascript</p>
+            <img class="iconSkills" src="./src/svg/javascript.svg" />
+          </div>
+
+          <div>
+            <p>Tailwind</p>
+            <img class="iconSkills" src="" />
+          </div>
+
+          <div>
+            <p>React</p>
+            <img class="iconSkills" src="./src/svg/react.svg" />
+          </div>
+
+          <div>
+            <p>Node.js</p>
+            <img class="iconSkills" src="./src/svg/node.svg" />
+          </div>
+
+          <div>
+            <p>Git</p>
+            <img class="iconSkills" src="./src/svg/git.svg" />
+          </div>
+
+          <div>
+            <p>GitHub</p>
+            <img class="iconSkills" src="./src/svg/github2.svg" />
+          </div>
+
+          <div>
+            <p>Figma</p>
+            <img class="iconSkills" src="./src/svg/figma.svg" />
+          </div>
         </div>
       </div>
 
@@ -168,13 +202,20 @@
         <h3>Contato</h3>
 
         <div class="contactForm">
-          <form action="">
-            <p>Entre em contato comigo!</p>
-            <input type="text" placeholder="Seu nome" />
-            <input type="text" placeholder="Seu melhor email" />
-            <input type="text" placeholder="Digite o assunto" />
-            <input type="text" placeholder="Sua mensagem" />
-            <input type="submit" value="Enviar Mensagem" />
+          <form class="containerForm" action="">
+            <input class="inputForm" type="text" placeholder="Seu nome" />
+            <input
+              class="inputForm"
+              type="text"
+              placeholder="Seu melhor email"
+            />
+            <input
+              class="inputForm"
+              type="text"
+              placeholder="Digite o assunto"
+            />
+            <input id="messageForm" type="text" placeholder="Sua mensagem" />
+            <input id="buttonForm" type="submit" value="Enviar Mensagem" />
           </form>
         </div>
       </div>

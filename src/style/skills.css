@@ -1,6 +1,6 @@
 .skills {
   background-color: var(--body-color-black-dark);
-  height: 80vh;
+  height: 120vh;
 }
 
 .skills > h3 {
@@ -10,4 +10,51 @@
   display: flex;
   justify-content: center;
   padding: 5rem;
+}
+
+.cardSkills {
+  border: solid 1px red;
+  background-color: blue;
+}
+
+.containerSkills {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 35px;
+  background-color: ;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerSkills > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-items: center;
+  cursor: default;
+  color: var(--whiter);
+  background-color: var(--body-color-black-light);
+  width: 150px;
+  height: 135px;
+  border-left: 3px solid var(--border-header);
+  border-bottom: 3px solid var(--border-header);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.containerSkills > div > p {
+  font-family: "Montserrat";
+}
+
+.containerSkills > div > img {
+  color: var(--border-header);
+}
+
+.iconSkills {
+  width: 48px;
+  height: 48px;
 }
