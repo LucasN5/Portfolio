@@ -34,15 +34,18 @@
 }
 
 #messageForm::placeholder {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 #messageForm {
   width: 35rem;
-  height: 2rem;
-  padding-bottom: 110px;
+  height: 10rem;
   border-radius: 5px;
   border-style: none;
   background-color: var(--form-box-color);
+  position: relative;
 }
 
 #buttonForm {

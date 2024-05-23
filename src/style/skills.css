@@ -19,18 +19,16 @@
 
 .containerSkills {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-gap: 35px;
-  background-color: ;
-  height: 40vh;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-gap: 50px;
   justify-content: center;
-  align-items: center;
 }
 
 .containerSkills > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-self: center;
   align-items: center;
   gap: 15px;
   text-items: center;
@@ -39,11 +37,11 @@
   background-color: var(--body-color-black-light);
   width: 150px;
   height: 135px;
-  border-left: 3px solid var(--border-header);
-  border-bottom: 3px solid var(--border-header);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-left: 4px solid var(--border-header);
+  border-bottom: 4px solid var(--border-header);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 .containerSkills > div > p {

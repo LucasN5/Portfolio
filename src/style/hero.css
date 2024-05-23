@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ;
 }
 
 :root {
@@ -16,9 +15,6 @@
   --form-text-color: #bfb7b7;
 }
 
-header {
-}
-
 .navBar_style {
   display: flex;
   align-items: center;
@@ -30,6 +26,15 @@ header {
   height: 3rem;
   font-family: "Montserrat";
   font-weight: 500;
+  position: relative;
+  padding-left: 60px;
+}
+
+.navBar_style > img {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  left: 50px;
 }
 
 .navBar_style > a {
@@ -58,10 +63,25 @@ header {
 .contactIcons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  style: none;
+  justify-content: space-around;
   list-style-type: none;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+.contactIcons > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  background-color: var(--body-color-black-dark);
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.contactIcons > li > img {
+  width: 30px;
+  height: 30px;
 }
 
 .photo {
