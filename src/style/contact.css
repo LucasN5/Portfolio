@@ -26,17 +26,31 @@
   padding: 5px;
   border-radius: 5px;
   border-style: none;
+  color: var(--whiter);
+  font-family: "Hind";
   background-color: var(--form-box-color);
+}
+
+.inputForm:focus {
+  color: var(--whiter);
+  font-family: "Hind";
 }
 
 ::placeholder {
   color: var(--form-text-color);
+  font-family: "Montserrat";
 }
 
 #messageForm::placeholder {
   position: absolute;
   top: 5px;
   left: 5px;
+  font-family: "Montserrat";
+}
+
+#messageForm:focus {
+  color: var(--whiter);
+  font-family: "Hind";
 }
 
 #messageForm {
@@ -44,8 +58,11 @@
   height: 10rem;
   border-radius: 5px;
   border-style: none;
+  color: var(--whiter);
   background-color: var(--form-box-color);
   position: relative;
+  resize: none;
+  font-family: "Hind";
 }
 
 #buttonForm {
@@ -53,6 +70,10 @@
   border-radius: 20px;
   padding: 8px;
   cursor: pointer;
+  font-family: "Montserrat";
+  font-weight: 500;
+  background-color: var(--body-color-black-light);
+  color: var(--text-color-purple-light);
 }
 
 .footerContainer {

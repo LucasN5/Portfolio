@@ -84,12 +84,12 @@
       <div class="projects">
         <h3>Projetos</h3>
         <div class="projectsContainer">
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
-          <div>a</div>
+          <div class="weatherImage"></div>
+          <div class="mangaImage"></div>
+          <div class="finderImage"></div>
+          <div class="copaImage"></div>
+          <div class="listImage"></div>
+          <div class="onConstruction"></div>
         </div>
       </div>
 
@@ -208,29 +208,59 @@
         <h3>Contato</h3>
 
         <div class="contactForm">
-          <form class="containerForm" action="">
-            <input class="inputForm" type="text" placeholder="Seu nome" />
+          <form class="containerForm" id="form" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="a72e5596-d4e3-405f-90d8-54a2d10d8620"
+            />
+
             <input
               class="inputForm"
               type="text"
+              name="nome"
+              placeholder="Seu nome"
+              required
+            />
+            <input
+              class="inputForm"
+              type="text"
+              name="email"
               placeholder="Seu melhor email"
+              required
             />
             <input
               class="inputForm"
               type="text"
+              name="assunto"
               placeholder="Digite o assunto"
+              required
             />
-            <input id="messageForm" type="text" placeholder="Sua mensagem" />
-            <input id="buttonForm" type="submit" value="Enviar Mensagem" />
+            <textarea
+              id="messageForm"
+              type="text"
+              name="mensagem"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <input
+              id="buttonForm"
+              type="submit"
+              value="Enviar Mensagem"
+              required
+            />
+
+            <div id="result"></div>
           </form>
         </div>
       </div>
+      <script src="./src/js/form.js"></script>
     </main>
 
     <footer>
       <div class="footerContainer">
         <p>
-          Copyright @ 2023 <span class="colorName">Lucas Nunes</span>. Todos os
+          Copyright @ 2024 <span class="colorName">Lucas Nunes</span>. Todos os
           direitos reservados.
         </p>
       </div>

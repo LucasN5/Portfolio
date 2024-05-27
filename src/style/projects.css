@@ -17,7 +17,7 @@
   grid-template-columns: 250px 250px 250px;
   grid-gap: 35px;
   background-color: ;
-  height: 40vh;
+  height: 50vh;
   justify-content: center;
 }
 
@@ -27,4 +27,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weatherImage {
+  background-image: url(../img/ClimaTempoApp.png);
+}
+
+.finderImage {
+  background-image: url(../img/GitHubFinder.png);
+}
+
+.mangaImage {
+  background-image: url(../img/LandingPageManga.png);
+}
+
+.copaImage {
+  background-image: url(../img/NLWCopa.png);
+}
+
+.listImage {
+  background-image: url(../img/ToDoList.png);
 }
