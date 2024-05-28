@@ -8,7 +8,7 @@ form.addEventListener("submit", function (e) {
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
 
-  result.innerHTML = "Please wait...";
+  result.innerHTML = "Enviando mensagem...";
 
   fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -21,20 +21,21 @@ form.addEventListener("submit", function (e) {
     .then(async (response) => {
       let json = await response.json();
       if (response.status == 200) {
-        result.innerHTML = json.message;
+        result.innerHTML = "Mensagem Enviada! :)";
       } else {
         console.log(response);
-        result.innerHTML = json.message;
+        result.innerHTML =
+          "A mensagem não foi enviada, me contate pelo linkedln :>";
       }
     })
     .catch((error) => {
       console.log(error);
-      result.innerHTML = "Something went wrong!";
+      result.innerHTML = "Algo deu errado!";
     })
     .then(function () {
       form.reset();
       setTimeout(() => {
         result.style.display = "none";
-      }, 3000);
+      }, 2000);
     });
 });

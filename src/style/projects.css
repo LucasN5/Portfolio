@@ -23,13 +23,24 @@
 
 .projectsContainer > div {
   border: 1px solid red;
-  text-items: center;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: overlay;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.projectsContainer > div > img {
+  display: none;
+}
+
+.projectsContainer > div > p {
+  display: none;
 }
 
 .weatherImage {
@@ -50,4 +61,21 @@
 
 .listImage {
   background-image: url(../img/ToDoList.png);
+}
+
+.projectsContainer > div:hover {
+  transform: scale(1.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 50%;
+}
+
+.projectsContainer > div:hover p,
+.projectsContainer > div:hover img {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  align-items: center;
+  color: var(--whiter);
 }

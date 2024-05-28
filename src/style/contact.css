@@ -76,12 +76,16 @@
   color: var(--text-color-purple-light);
 }
 
+#result {
+  color: var(--whiter);
+  font-family: "Hind";
+}
+
 .footerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  cursor: pointer;
   border-top: solid #b92db3;
   background-color: var(--body-color-black-light);
   color: var(--whiter);
