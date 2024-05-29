@@ -39,6 +39,18 @@
 
 .navBar_style > a {
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navBar_style > a:visited {
+  cursor: pointer;
+  color: inherit;
+}
+
+.navBar_style > a:active {
+  cursor: pointer;
+  color: inherit;
 }
 
 .hero {

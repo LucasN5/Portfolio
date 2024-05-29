@@ -110,7 +110,9 @@ ul li .dateCertification {
   top: -45px;
   display: grid;
   place-items: center;
-  color: #fff;
+  color: var(--whiter);
+  font-family: "Montserrat";
+  font-weight: 600;
   font-size: 13px;
   box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
 }
@@ -149,6 +151,10 @@ ul li a {
   text-decoration: none;
   color: rgb(18, 54, 214);
   transition: all 0.3s ease;
+}
+
+#linkCertification {
+  pointer-events: none;
 }
 
 @media only screen and (min-width: 798px) and (max-width: 1100px) {

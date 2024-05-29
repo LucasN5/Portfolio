@@ -29,25 +29,44 @@
     <header>
       <nav class="navBar_style">
         <img src="./src/img/20231026_213103_0000.png" />
-        <a>Ínicio</a>
-        <a>Sobre mim</a>
-        <a>Projetos</a>
-        <a>Habilidades</a>
-        <a>Certificados</a>
-        <a>Contato</a>
+        <a href="#linkHero">Ínicio</a>
+        <a href="#linkAbout">Sobre mim</a>
+        <a href="#linkProjects">Projetos</a>
+        <a href="#linkSkills">Habilidades</a>
+        <a href="#linkCertifications">Certificados</a>
+        <a href="#linkContact">Contato</a>
       </nav>
     </header>
 
     <main>
-      <div class="hero">
+      <div id="linkHero" class="hero">
         <div class="description">
           <h1>Lucas Nunes</h1>
           <h3>Desenvolvedor front-end</h3>
           <ul class="contactIcons">
-            <li><img src="./src/svg/cv.svg" /></li>
-            <li><img src="./src/svg/github.svg" /></li>
-            <li><img src="./src/svg/linkedln.svg" /></li>
-            <li><img src="./src/svg/zap.svg" /></li>
+            <li
+              id="linkCv"
+              data-url="./src/img/Versão melhorada CV - Lucas da Silva Nunes (1).pdf"
+            >
+              <img src="./src/svg/cv.svg" />
+            </li>
+
+            <li id="linkGithub" data-url="https://github.com/LucasN5">
+              <img src="./src/svg/github.svg" />
+            </li>
+            <li
+              id="linkLinkedln"
+              data-url="https://www.linkedin.com/in/lucasdasilvanunes/"
+            >
+              <img src="./src/svg/linkedln.svg" />
+            </li>
+
+            <li
+              id="linkZap"
+              data-url="https://wa.me/5513981980231?text=Oi,%20gostaria%20de%20solicitar%20um%20serviço."
+            >
+              <img src="./src/svg/zap.svg" />
+            </li>
           </ul>
         </div>
 
@@ -56,7 +75,7 @@
         </div>
       </div>
 
-      <div class="about">
+      <div id="linkAbout" class="about">
         <div class="aboutContainerTittle">
           <h2 class="aboutTittle">Sobre mim</h2>
         </div>
@@ -81,7 +100,7 @@
         </div>
       </div>
 
-      <div class="projects">
+      <div class="projects" id="linkProjects">
         <h3>Projetos</h3>
 
         <div class="projectsContainer">
@@ -133,7 +152,7 @@
         </div>
       </div>
 
-      <div class="skills">
+      <div class="skills" id="linkSkills">
         <h3>Habilidades</h3>
         <div class="containerSkills">
           <div>
@@ -188,20 +207,21 @@
         </div>
       </div>
 
-      <div class="certificate">
+      <div class="certificate" id="linkCertifications">
         <h3 class="tittleCertificate">Certificados</h3>
 
         <div class="containerCertificate">
           <ul>
             <li>
               <h3 class="certificationTittle">
-                Graduação Ciências da Computação
+                Graduação Análise e Desenvolvimento de Sistemas
               </h3>
               <p>
-                Graduação em ensino de superior do curso Ciências da Computação
+                Graduação em ensino de superior do curso Análise e
+                Desenvolvimento de Sistemas
               </p>
-              <a href="#">Ver certificado</a>
-              <span class="dateCertification">Dezembro 2023</span>
+              <a id="linkCertification" href="#">Em andamento. . .</a>
+              <span class="dateCertification">Julho 2026</span>
               <span class="circleCertification"></span>
             </li>
 
@@ -212,39 +232,45 @@
               <p>
                 Graduação em ensino de superior do curso Ciências da Computação
               </p>
-              <a href="#">Ver certificado</a>
+              <a
+                href="https://www.linkedin.com/in/lucasdasilvanunes/overlay/1716984789489/single-media-viewer?type=DOCUMENT&profileId=ACoAADRljNwBXz0j1o8TQqtI2WjdCyCN52poqts&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7a0ey10pRm6V2DaAulOL7g%3D%3D"
+                >Ver certificado</a
+              >
               <span class="dateCertification">Dezembro 2023</span>
               <span class="circleCertification"></span>
             </li>
 
             <li>
               <h3 class="certificationTittle">
-                Graduação Ciências da Computação
+                Formação Especializar | Rocketseat
               </h3>
-              <p>
-                Graduação em ensino de superior do curso Ciências da Computação
-              </p>
-              <a href="#">Ver certificado</a>
-              <span class="dateCertification">Dezembro 2023</span>
+              <p>Curso sobre conhecimentos gerais de programação web</p>
+              <a
+                href="https://app.rocketseat.com.br/certificates/565063d1-17f3-458b-b5e1-4e666eb4a4fa"
+                >Ver certificado</a
+              >
+              <span class="dateCertification">Julho 2023</span>
               <span class="circleCertification"></span>
             </li>
 
             <li>
-              <h3 class="certificationTittle">
-                Graduação Ciências da Computação
-              </h3>
+              <h3 class="certificationTittle">Formação Front-end | Alura</h3>
               <p>
-                Graduação em ensino de superior do curso Ciências da Computação
+                Curso sobre ferramentas e projetos web voltado para programação
+                front-end
               </p>
-              <a href="#">Ver certificado</a>
-              <span class="dateCertification">Dezembro 2023</span>
+              <a
+                href="https://cursos.alura.com.br/degree/certificate/e1418654-8900-41f1-a615-2b5e4a9324d2"
+                >Ver certificado</a
+              >
+              <span class="dateCertification">Junho 2022</span>
               <span class="circleCertification"></span>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="linkContact">
         <h3>Contato</h3>
 
         <div class="contactForm">
@@ -295,6 +321,7 @@
         </div>
       </div>
       <script src="./src/js/form.js"></script>
+      <script src="./src/js/index.js"></script>
     </main>
 
     <footer>
