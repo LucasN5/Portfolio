@@ -42,6 +42,8 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   border-top-left-radius: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .containerSkills > div > p {
@@ -50,6 +52,10 @@
 
 .containerSkills > div > img {
   color: var(--border-header);
+}
+
+.containerSkills > div:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .iconSkills {

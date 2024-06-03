@@ -41,6 +41,10 @@
   font-family: "Montserrat";
 }
 
+.inputForm:focus::placeholder {
+  color: transparent;
+}
+
 #messageForm::placeholder {
   position: absolute;
   top: 5px;
@@ -53,6 +57,10 @@
   font-family: "Hind";
 }
 
+#messageForm:focus::placeholder {
+  color: transparent;
+}
+
 #messageForm {
   width: 35rem;
   height: 10rem;
@@ -63,6 +71,7 @@
   position: relative;
   resize: none;
   font-family: "Hind";
+  padding: 5px;
 }
 
 #buttonForm {
