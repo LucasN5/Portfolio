@@ -1,6 +1,6 @@
 .projects {
   background-color: var(--body-color-black-light);
-  height: 80vh;
+  height: 110vh;
 }
 
 .projects > h3 {
@@ -14,33 +14,47 @@
 
 .projectsContainer {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  flex-direction: column;
+  grid-template-columns: 350px 350px 350px;
   grid-gap: 35px;
-  background-color: ;
-  height: 50vh;
+  height: 70vh;
   justify-content: center;
 }
 
 .projectsContainer > div {
-  border: 1px solid red;
+  position: relative;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: overlay;
-  transition: transform 0.3s ease;
-  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, z-index 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
-.projectsContainer > div > img {
-  display: none;
+.projectsContainer > div:hover {
+  transform: scale(1.5);
+  z-index: 10; /* Eleva o card em foco sobre os outros */
 }
 
-.projectsContainer > div > p {
-  display: none;
+.projectsContainer > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.projectsContainer > div:hover::before {
+  opacity: 0;
 }
 
 .weatherImage {
@@ -63,19 +77,33 @@
   background-image: url(../img/ToDoList.png);
 }
 
-.projectsContainer > div:hover {
-  transform: scale(1.5);
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 50%;
+.projectsContainer > div p,
+.projectsContainer > div img {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.projectsContainer > div p {
+  cursor: default;
+  color: var(--whiter);
+  font-family: "Montserrat";
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.projectsContainer > div img {
+  width: 25px;
+  height: 25px;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 5px;
+  position: relative;
 }
 
 .projectsContainer > div:hover p,
 .projectsContainer > div:hover img {
-  width: 15px;
-  height: 15px;
-  display: flex;
-  flex-direction: columns;
-  justify-content: center;
-  align-items: center;
-  color: var(--whiter);
+  opacity: 0;
 }
