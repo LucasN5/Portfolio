@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --border-header: #b91bbc;
   --body-color-black-dark: #110f0f;
@@ -20,13 +24,16 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  border-bottom: solid #b92db3;
+  border-bottom: solid var(--text-color-purple-dark);
   background-color: var(--body-color-black-dark);
   color: var(--whiter);
   height: 3rem;
   font-family: "Montserrat";
   font-weight: 500;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   padding-left: 60px;
 }
 
@@ -43,11 +50,25 @@
   color: inherit;
 }
 
-.navBar_style > a:visited {
-  cursor: pointer;
-  color: inherit;
+#heroNav,
+#aboutNav,
+#projectsNav,
+#skillsNav,
+#certificateNav,
+#contactNav {
+  transition: 0.3s ease;
 }
 
+#heroNav:hover,
+#aboutNav:hover,
+#projectsNav:hover,
+#skillsNav:hover,
+#certificateNav:hover,
+#contactNav:hover {
+  color: var(--text-color-purple-light);
+}
+
+.navBar_style > a:visited,
 .navBar_style > a:active {
   cursor: pointer;
   color: inherit;
@@ -60,6 +81,7 @@
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  margin-top: 3rem;
 }
 
 .description > h1 {
@@ -115,5 +137,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b92db3;
+  background: var(--text-color-purple-dark);
 }
