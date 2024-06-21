@@ -23,31 +23,30 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 200px;
   border-bottom: solid var(--text-color-purple-dark);
   background-color: var(--body-color-black-dark);
-  color: var(--whiter);
   height: 3rem;
-  font-family: "Montserrat";
-  font-weight: 500;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding-left: 60px;
+  position: fixed;
+  z-index: 1000;
 }
 
-.navBar_style > img {
+.navBar_style > div > img {
   height: 45px;
   width: 45px;
-  position: absolute;
-  left: 50px;
 }
 
-.navBar_style > a {
+.navBar_style > div > a {
   cursor: pointer;
   text-decoration: none;
-  color: inherit;
+  color: var(--whiter);
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #heroNav,
@@ -68,10 +67,79 @@ html {
   color: var(--text-color-purple-light);
 }
 
-.navBar_style > a:visited,
-.navBar_style > a:active {
+.navBar_style > div a:visited,
+.navBar_style > div a:active {
   cursor: pointer;
-  color: inherit;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown button {
+  background-color: var(--body-color-black-light);
+  padding: 8px 15px;
+  border: none;
+  color: var(--whiter);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Montserrat";
+  font-weight: 200px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.dropdownContent > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Montserrat";
+  font-weight: 200px;
+}
+
+.dropdownContent > a > p {
+  text-decoration: none;
+  color: var(--whiter);
+}
+
+.dropdown .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--body-color-black-dark);
+  min-width: 120px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdown:hover button {
+  background-color: var();
+}
+
+.dropdownOption1:hover {
+  background-color: var(--form-box-color);
+}
+
+.dropdownOption2:hover {
+  background-color: var(--form-box-color);
+}
+
+.idiomFlag {
+  height: 25px;
+  width: 25px;
+}
+
+hr {
+  border-color: var(--border-header);
+  height: 2px;
 }
 
 .hero {
