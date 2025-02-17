@@ -10,6 +10,7 @@ html {
 
 :root {
   --border-header: #b91bbc;
+  --border-header-dark: #9f18a6;
   --body-color-black-dark: #110f0f;
   --body-color-black-light: #262127;
   --whiter: #f8f2f2;

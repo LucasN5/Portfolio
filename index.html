@@ -24,7 +24,7 @@
 
     <script src="./src/js/form.js"></script>
     <script src="./src/js/index.js"></script>
-    <script src="./src/js/project.js"></script>
+    <script src="./src/js/projectsCard.js"></script>
     <script src="./src/js/animateScroll.js"></script>
 
     <link
@@ -183,7 +183,7 @@
         <h3 data-aos="fade-up" data-aos-delay="400">Projetos</h3>
 
         <div class="projectsContainer" data-aos="fade-up" data-aos-delay="400">
-          <div class="weatherImage">
+          <div class="weatherImage" onclick="openDialog('dialog1')">
             <p>Clima Tempo App</p>
             <div class="iconContainer">
               <img class="iconProject" src="./src/svg/html.svg" />
@@ -193,7 +193,7 @@
             </div>
           </div>
 
-          <div class="mangaImage">
+          <div class="mangaImage" onclick="openDialog('dialog2')">
             <p>Landing Page Manga</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
@@ -202,7 +202,7 @@
             </div>
           </div>
 
-          <div class="finderImage">
+          <div class="finderImage" onclick="openDialog('dialog3')">
             <p>GitHub Finder User</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
@@ -213,7 +213,7 @@
             </div>
           </div>
 
-          <div class="copaImage">
+          <div class="copaImage" onclick="openDialog('dialog4')">
             <p>NLW - Copa</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
@@ -222,7 +222,7 @@
             </div>
           </div>
 
-          <div class="listImage">
+          <div class="listImage" onclick="openDialog('dialog5')">
             <p>Lista de Afazeres</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
@@ -232,7 +232,7 @@
             </div>
           </div>
 
-          <div class="portfolioImage">
+          <div class="portfolioImage" onclick="openDialog('dialog6')">
             <p>This Portfolio</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
@@ -241,6 +241,78 @@
             </div>
           </div>
         </div>
+
+        <dialog id="dialog1">
+          <div class="dialogContainer">
+            <div class="rightSideContainer">
+              <div class="nameDialogContainer">
+                <h2 class="nameProjectDialog">Clima Tempo App</h2>
+                <a class="closeButton" onclick="closeDialog('dialog1')">
+                  <p class="closeIcon">X</p>
+                </a>
+              </div>
+
+              <div class="descriptionDialogContainer">
+                <div>
+                  <p>
+                    Clima Tempo App é um projeto web que consome uma API chamada
+                    open weather e que tem como objetivo demonstrar a
+                    temperatura, humidade e velocidade do vento em cidades e
+                    paises.
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    O projeto foi desenvolvido com as seguintes tecnologias:
+                  </p>
+                </div>
+
+                <div>
+                  <p>• HTML5</p>
+                  <p>• CSS</p>
+                  <p>• React.Js</p>
+                  <p>• Javascript</p>
+                  <p>• Open Weather API</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leftSideContainer">
+              <div>
+                <img
+                  class="dialogProjectImage"
+                  src="./src/img/ClimaTempoApp.png"
+                />
+              </div>
+
+              <div class="dialogButtonProjects">
+                <button>Acessar Projeto</button>
+                <button>Acessar Repositório</button>
+              </div>
+            </div>
+          </div>
+        </dialog>
+
+        <dialog id="dialog2">
+          <h2>Landing Page Manga</h2>
+        </dialog>
+
+        <dialog id="dialog3">
+          <h2>GitHub Finder User</h2>
+        </dialog>
+
+        <dialog id="dialog4">
+          <h2>NLW - Copa</h2>
+        </dialog>
+
+        <dialog id="dialog5">
+          <h2>Lista de Afazeres</h2>
+        </dialog>
+
+        <dialog id="dialog6">
+          <h2>This Portfolio</h2>
+        </dialog>
       </div>
 
       <div class="skills" id="linkSkills">
