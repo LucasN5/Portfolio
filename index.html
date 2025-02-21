@@ -26,11 +26,14 @@
     <script src="./src/js/index.js"></script>
     <script src="./src/js/projectsCard.js"></script>
     <script src="./src/js/animateScroll.js"></script>
+    <script src="./src/js/aboutCard.js"></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
       rel="stylesheet"
     />
+
+    <link rel="icon" type="image/svg+xml" href="./src/img/tabIcon.png" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
 
     <title>Lucas Nunes - Portfolio</title>
@@ -157,25 +160,80 @@
           data-aos-delay="400"
         >
           <h2 class="aboutTittle">Sobre mim</h2>
+          <p>Transformando ideias em soluções digitais</p>
         </div>
         <div class="aboutContainer" data-aos="fade-up" data-aos-delay="400">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player
-            src="https://lottie.host/fd1e2af1-1ed4-4ecc-8347-7f6da088930c/XH3V8ijRmX.json"
-            background="##fff"
-            speed="1"
-            style="width: 400px; height: 400px"
-            loop
-            autoplay
-            direction="1"
-            mode="normal"
-          ></lottie-player>
-          <p class="aboutText" data-aos="fade-up" data-aos-delay="400">
-            Apaixonado por tecnologia decidi seguir<br />
-            esta carreira da programação e encontrei<br />
-            minha paixão que é o front-end. Desenvolvo <br />
-            interfaces modernas e de alta qualidade.<br />
-          </p>
+          <div id="aboutContainerLeft">
+            <ul id="aboutCardsContainer">
+              <li class="aboutCards">
+                <div>
+                  <img
+                    src="./src/svg/computerIcon.svg"
+                    alt="Icone de um monitor"
+                  />
+                  <p>Tecnologias Dominadas</p>
+                </div>
+                <div>
+                  <p id="aboutCardsNumber1">0</p>
+                </div>
+              </li>
+
+              <li class="aboutCards">
+                <div>
+                  <img src="./src/svg/codeIcon.svg" alt="Icone de um código" />
+                  <p>Anos de Experiência</p>
+                </div>
+                <div>
+                  <p id="aboutCardsNumber2">0</p>
+                </div>
+              </li>
+
+              <li class="aboutCards">
+                <div>
+                  <img
+                    src="./src/svg/commitIcon.svg"
+                    alt="Icone de um commit"
+                  />
+                  <p>Commits Feitos</p>
+                </div>
+                <div>
+                  <p id="aboutCardsNumber3">0</p>
+                </div>
+              </li>
+
+              <li class="aboutCards">
+                <div>
+                  <img
+                    src="./src/svg/degreeIcon.svg"
+                    alt="Icone de um diploma"
+                  />
+                  <p>Cursos Concluídos</p>
+                </div>
+                <div>
+                  <p id="aboutCardsNumber4">0</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="aboutContainerRight">
+            <div id="aboutTextContainer">
+              <p class="aboutText">
+                Tenho paixão por criar designs elegantes e desenvolver soluções
+                inteligentes para desafios complexos. Com 2 anos de experiência
+                adquirida por meio de projetos pessoais em desenvolvimento web,
+                estou sempre buscando aprender e me especializar para alcançar
+                meu objetivo de me tornar um profissional de excelência.
+              </p>
+
+              <p class="aboutText">
+                Minha jornada na programação começou com a curiosidade de
+                entender como os jogos eram criados. Esse interesse me levou a
+                explorar o mundo do código, descobrir minha vocação e,
+                eventualmente, me apaixonar pelo desenvolvimento front-end.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -287,31 +345,287 @@
               </div>
 
               <div class="dialogButtonProjects">
-                <button>Acessar Projeto</button>
-                <button>Acessar Repositório</button>
+                <a href="https://clima-tempo-app-orpin.vercel.app/">
+                  <button>Acessar Projeto</button>
+                </a>
+
+                <a href="https://github.com/LucasN5/ClimaTempo-App">
+                  <button>Acessar Repositório</button>
+                </a>
               </div>
             </div>
           </div>
         </dialog>
 
         <dialog id="dialog2">
-          <h2>Landing Page Manga</h2>
+          <div class="dialogContainer">
+            <div class="rightSideContainer">
+              <div class="nameDialogContainer">
+                <h2 class="nameProjectDialog">Landing Page Manga</h2>
+                <a class="closeButton" onclick="closeDialog('dialog2')">
+                  <p class="closeIcon">X</p>
+                </a>
+              </div>
+
+              <div class="descriptionDialogContainer">
+                <div>
+                  <p>
+                    Landing Page Manga é um projeto para treinar conceitos de
+                    landing page utilizando tecnologias front-end, o projeto
+                    contém descrições de páginas, links de seções e
+                    responsividade.
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    O projeto foi desenvolvido com as seguintes tecnologias:
+                  </p>
+                </div>
+
+                <div>
+                  <p>• HTML5</p>
+                  <p>• CSS</p>
+                  <p>• Javascript</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leftSideContainer">
+              <div>
+                <img
+                  class="dialogProjectImage"
+                  src="./src/img/LandingPageManga.png"
+                />
+              </div>
+
+              <div class="dialogButtonProjects">
+                <a href="https://lucasn5.github.io/Landing_Page-Manga/">
+                  <button>Acessar Projeto</button>
+                </a>
+
+                <a href="https://github.com/LucasN5/Landing_Page-Manga">
+                  <button>Acessar Repositório</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </dialog>
 
         <dialog id="dialog3">
-          <h2>GitHub Finder User</h2>
+          <div class="dialogContainer">
+            <div class="rightSideContainer">
+              <div class="nameDialogContainer">
+                <h2 class="nameProjectDialog">GitHub Finder User</h2>
+                <a class="closeButton" onclick="closeDialog('dialog3')">
+                  <p class="closeIcon">X</p>
+                </a>
+              </div>
+
+              <div class="descriptionDialogContainer">
+                <div>
+                  <p>
+                    GitHub Finder User é um projeto para treinamento de consumo
+                    de API, o projeto utiliza a API do github para fazer
+                    requisições de busca de usuários, caso seja encontrado o
+                    usuário, é demonstrado o local onde reside, número de
+                    seguidores e quantos usuários ele segue. Todas essas
+                    informações são obtidas por meio da API do GitHub
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    O projeto foi desenvolvido com as seguintes tecnologias:
+                  </p>
+                </div>
+
+                <div>
+                  <p>• HTML5</p>
+                  <p>• CSS</p>
+                  <p>• Typescript</p>
+                  <p>• Javascript</p>
+                  <p>• React</p>
+                  <p>• API GitHub</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leftSideContainer">
+              <div>
+                <img
+                  class="dialogProjectImage"
+                  src="./src/img/GitHubFinder.png"
+                />
+              </div>
+
+              <div class="dialogButtonProjects">
+                <a href="https://github-finder-rho-tawny.vercel.app/">
+                  <button>Acessar Projeto</button>
+                </a>
+                <a href="https://github.com/LucasN5/Github_finder">
+                  <button>Acessar Repositório</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </dialog>
 
         <dialog id="dialog4">
-          <h2>NLW - Copa</h2>
+          <div class="dialogContainer">
+            <div class="rightSideContainer">
+              <div class="nameDialogContainer">
+                <h2 class="nameProjectDialog">NLW - Copa</h2>
+                <a class="closeButton" onclick="closeDialog('dialog4')">
+                  <p class="closeIcon">X</p>
+                </a>
+              </div>
+
+              <div class="descriptionDialogContainer">
+                <div>
+                  <p>
+                    NLW - Copa é um projeto feito durante o evento NLW
+                    subsidiado pela Rocketseat, o projeto treina conceitos de
+                    HTML, CSS e Javascript em uma aplicação que demonstra os
+                    horários, datas e adversários que o Brasil enfrentou durante
+                    a Copa do Mundo de 2022.
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    O projeto foi desenvolvido com as seguintes tecnologias:
+                  </p>
+                </div>
+
+                <div>
+                  <p>• HTML5</p>
+                  <p>• CSS</p>
+                  <p>• Javascript</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leftSideContainer">
+              <div>
+                <img class="dialogProjectImage" src="./src/img/NLWCopa.png" />
+              </div>
+
+              <div class="dialogButtonProjects">
+                <a href="https://lucasn5.github.io/NLW-Copa/">
+                  <button>Acessar Projeto</button>
+                </a>
+                <a href="https://github.com/LucasN5/NLW-Copa">
+                  <button>Acessar Repositório</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </dialog>
 
         <dialog id="dialog5">
-          <h2>Lista de Afazeres</h2>
+          <div class="dialogContainer">
+            <div class="rightSideContainer">
+              <div class="nameDialogContainer">
+                <h2 class="nameProjectDialog">Lista de Afazeres</h2>
+                <a class="closeButton" onclick="closeDialog('dialog5')">
+                  <p class="closeIcon">X</p>
+                </a>
+              </div>
+
+              <div class="descriptionDialogContainer">
+                <div>
+                  <p>
+                    Lista de Afazeres é um projeto que permite ao usuário criar
+                    tarefas com a opção de definir um tipo, filtrá-las por
+                    status (concluídas, completas ou incompletas), pesquisá-las
+                    por nome, marcar tarefas como concluídas ou excluí-las, além
+                    de organizar a lista de tarefas em ordem ascendente ou
+                    descendente.
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    O projeto foi desenvolvido com as seguintes tecnologias:
+                  </p>
+                </div>
+
+                <div>
+                  <p>• HTML5</p>
+                  <p>• CSS</p>
+                  <p>• Javascript</p>
+                  <p>• React</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leftSideContainer">
+              <div>
+                <img class="dialogProjectImage" src="./src/img/ToDoList.png" />
+              </div>
+
+              <div class="dialogButtonProjects">
+                <a href="https://to-do-list-beta-silk.vercel.app/">
+                  <button>Acessar Projeto</button>
+                </a>
+
+                <a href="https://github.com/LucasN5/ToDo-List">
+                  <button>Acessar Repositório</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </dialog>
 
         <dialog id="dialog6">
-          <h2>This Portfolio</h2>
+          <div class="dialogContainer">
+            <div class="rightSideContainer">
+              <div class="nameDialogContainer">
+                <h2 class="nameProjectDialog">This Portfolio</h2>
+                <a class="closeButton" onclick="closeDialog('dialog6')">
+                  <p class="closeIcon">X</p>
+                </a>
+              </div>
+
+              <div class="descriptionDialogContainer">
+                <div>
+                  <p>
+                    Este portfolio é um projeto que tem como objetivo mostrar
+                    meu perfil profissional com descrições, habilidades
+                    técnicas, certificados, projetos e meios de contato
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    O projeto foi desenvolvido com as seguintes tecnologias:
+                  </p>
+                </div>
+
+                <div>
+                  <p>• HTML5</p>
+                  <p>• CSS</p>
+                  <p>• Javascript</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leftSideContainer">
+              <div>
+                <img
+                  class="dialogProjectImage"
+                  src="./src/img/LandingPageManga.png"
+                />
+              </div>
+
+              <div class="dialogButtonProjects">
+                <a href="https://github.com/LucasN5/Portfolio">
+                  <button>Acessar Repositório</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </dialog>
       </div>
 

@@ -1,6 +1,24 @@
 .about {
   background-color: var(--body-color-black-dark);
   height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+
+.aboutContainerTittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+}
+
+.aboutContainerTittle > p {
+  color: var(--form-text-color);
+  font-family: "Hind";
+  font-size: 16px;
 }
 
 .aboutTittle {
@@ -9,18 +27,103 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  padding: 5rem;
+}
+
+#aboutTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .aboutText {
-  color: var(--whiter);
+  color: var(--form-text-color);
   font-family: "Hind";
   font-size: 18px;
+  line-height: 2rem;
+  text-wrap: wrap;
 }
 
 .aboutContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30vh;
+  height: 45%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#aboutContainerLeft {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutCardsContainer {
+  display: grid;
+  height: 80%;
+  justify-items: center;
+
+  row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.aboutCards {
+  border-style: solid;
+  width: 85%;
+  height: 100%;
+  background-color: var(--body-color-black-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-left: 1px solid var(--border-header);
+  border-bottom: 1px solid var(--border-header);
+  border-right: var(--border-header);
+  border-top: var(--border-header);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.aboutCards:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.aboutCards > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aboutCards > div:nth-child(1) > img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.aboutCards > div:nth-child(1) > p {
+  color: var(--whiter);
+  font-family: "Hind";
+  font-size: 1.1rem;
+}
+
+.aboutCards > div:nth-child(2) > p {
+  color: var(--text-color-purple-dark);
+  font-family: "Hind";
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#aboutContainerRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

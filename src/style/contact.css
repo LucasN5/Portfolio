@@ -83,6 +83,11 @@
   font-weight: 500;
   background-color: var(--body-color-black-light);
   color: var(--text-color-purple-light);
+  transition: transform 0.3s ease;
+}
+
+#buttonForm:hover {
+  transform: scale(1.1);
 }
 
 #result {

@@ -138,6 +138,11 @@ html {
   width: 25px;
 }
 
+.arrowDown {
+  width: 25px;
+  height: 25px;
+}
+
 hr {
   border-color: var(--border-header);
   height: 2px;
