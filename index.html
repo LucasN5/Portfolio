@@ -96,18 +96,18 @@
         </div>
 
         <div class="dropdown">
-          <button>
+          <button id="languageButton">
             <img class="idiomFlag" src="./src/svg/brazilFlag.svg" />
-            <p>BR</p>
+            <p id="selectedLanguage">BR</p>
             <img class="arrowDown" src="./src/svg/arrowDown.svg" />
           </button>
           <div class="dropdownContent">
-            <a class="dropdownOption1">
+            <a class="dropdownOption" data-lang="en">
               <img class="idiomFlag" src="./src/svg/usaFlag.svg" />
               <p>EN</p>
             </a>
             <hr />
-            <a class="dropdownOption2">
+            <a class="dropdownOption" data-lang="br">
               <img class="idiomFlag" src="./src/svg/brazilFlag.svg" />
               <p>BR</p>
             </a>
@@ -120,7 +120,7 @@
       <div id="linkHero" class="hero">
         <div class="description" data-aos="fade-up" data-aos-delay="400">
           <h1>Lucas Nunes</h1>
-          <h3>Desenvolvedor front-end</h3>
+          <h3 id="heroSubtitle">Desenvolvedor front-end</h3>
           <ul class="contactIcons">
             <li
               id="linkCv"
@@ -159,8 +159,8 @@
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <h2 class="aboutTittle">Sobre mim</h2>
-          <p>Transformando ideias em soluções digitais</p>
+          <h2 class="aboutTittle" id="aboutTitle">Sobre mim</h2>
+          <p id="aboutSubtitle">Transformando ideias em soluções digitais</p>
         </div>
         <div class="aboutContainer" data-aos="fade-up" data-aos-delay="400">
           <div id="aboutContainerLeft">
@@ -171,7 +171,7 @@
                     src="./src/svg/computerIcon.svg"
                     alt="Icone de um monitor"
                   />
-                  <p>Tecnologias Dominadas</p>
+                  <p id="aboutCardTitle1">Tecnologias Dominadas</p>
                 </div>
                 <div>
                   <p id="aboutCardsNumber1">0</p>
@@ -181,7 +181,7 @@
               <li class="aboutCards">
                 <div>
                   <img src="./src/svg/codeIcon.svg" alt="Icone de um código" />
-                  <p>Anos de Experiência</p>
+                  <p id="aboutCardTitle2">Anos de Experiência</p>
                 </div>
                 <div>
                   <p id="aboutCardsNumber2">0</p>
@@ -194,7 +194,7 @@
                     src="./src/svg/commitIcon.svg"
                     alt="Icone de um commit"
                   />
-                  <p>Commits Feitos</p>
+                  <p id="aboutCardTitle3">Commits Feitos</p>
                 </div>
                 <div>
                   <p id="aboutCardsNumber3">0</p>
@@ -207,7 +207,7 @@
                     src="./src/svg/degreeIcon.svg"
                     alt="Icone de um diploma"
                   />
-                  <p>Cursos Concluídos</p>
+                  <p id="aboutCardTitle4">Cursos Concluídos</p>
                 </div>
                 <div>
                   <p id="aboutCardsNumber4">0</p>
@@ -218,7 +218,7 @@
 
           <div id="aboutContainerRight">
             <div id="aboutTextContainer">
-              <p class="aboutText">
+              <p class="aboutText" id="aboutText1">
                 Tenho paixão por criar designs elegantes e desenvolver soluções
                 inteligentes para desafios complexos. Com 2 anos de experiência
                 adquirida por meio de projetos pessoais em desenvolvimento web,
@@ -226,7 +226,7 @@
                 meu objetivo de me tornar um profissional de excelência.
               </p>
 
-              <p class="aboutText">
+              <p class="aboutText" id="aboutText2">
                 Minha jornada na programação começou com a curiosidade de
                 entender como os jogos eram criados. Esse interesse me levou a
                 explorar o mundo do código, descobrir minha vocação e,
@@ -238,11 +238,13 @@
       </div>
 
       <div class="projects" id="linkProjects">
-        <h3 data-aos="fade-up" data-aos-delay="400">Projetos</h3>
+        <h3 data-aos="fade-up" data-aos-delay="400" id="projectTitle">
+          Projetos
+        </h3>
 
         <div class="projectsContainer" data-aos="fade-up" data-aos-delay="400">
           <div class="weatherImage" onclick="openDialog('dialog1')">
-            <p>Clima Tempo App</p>
+            <p id="projectCardTitle1">Clima Tempo App</p>
             <div class="iconContainer">
               <img class="iconProject" src="./src/svg/html.svg" />
               <img src="./src/svg/css.svg" />
@@ -252,7 +254,7 @@
           </div>
 
           <div class="mangaImage" onclick="openDialog('dialog2')">
-            <p>Landing Page Manga</p>
+            <p id="projectCardTitle2">Landing Page Manga</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
               <img src="./src/svg/css.svg" />
@@ -261,7 +263,7 @@
           </div>
 
           <div class="finderImage" onclick="openDialog('dialog3')">
-            <p>GitHub Finder User</p>
+            <p id="projectCardTitle3">Buscador de Usuário GitHub</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
               <img src="./src/svg/css.svg" />
@@ -272,7 +274,7 @@
           </div>
 
           <div class="copaImage" onclick="openDialog('dialog4')">
-            <p>NLW - Copa</p>
+            <p id="projectCardTitle4">NLW - Copa</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
               <img src="./src/svg/css.svg" />
@@ -281,7 +283,7 @@
           </div>
 
           <div class="listImage" onclick="openDialog('dialog5')">
-            <p>Lista de Afazeres</p>
+            <p id="projectCardTitle5">Lista de Afazeres</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
               <img src="./src/svg/css.svg" />
@@ -291,7 +293,7 @@
           </div>
 
           <div class="portfolioImage" onclick="openDialog('dialog6')">
-            <p>This Portfolio</p>
+            <p id="projectCardTitle6">Portfolio</p>
             <div class="iconContainer">
               <img src="./src/svg/html.svg" />
               <img src="./src/svg/css.svg" />
@@ -304,7 +306,9 @@
           <div class="dialogContainer">
             <div class="rightSideContainer">
               <div class="nameDialogContainer">
-                <h2 class="nameProjectDialog">Clima Tempo App</h2>
+                <h2 class="nameProjectDialog" id="projectDialogTitle1">
+                  Clima Tempo App
+                </h2>
                 <a class="closeButton" onclick="closeDialog('dialog1')">
                   <p class="closeIcon">X</p>
                 </a>
@@ -312,7 +316,7 @@
 
               <div class="descriptionDialogContainer">
                 <div>
-                  <p>
+                  <p id="project1DialogDescription1">
                     Clima Tempo App é um projeto web que consome uma API chamada
                     open weather e que tem como objetivo demonstrar a
                     temperatura, humidade e velocidade do vento em cidades e
@@ -321,7 +325,7 @@
                 </div>
 
                 <div>
-                  <p>
+                  <p id="project1DialogDescription2">
                     O projeto foi desenvolvido com as seguintes tecnologias:
                   </p>
                 </div>
@@ -346,11 +350,13 @@
 
               <div class="dialogButtonProjects">
                 <a href="https://clima-tempo-app-orpin.vercel.app/">
-                  <button>Acessar Projeto</button>
+                  <button id="project1DialogOption1">Acessar Projeto</button>
                 </a>
 
                 <a href="https://github.com/LucasN5/ClimaTempo-App">
-                  <button>Acessar Repositório</button>
+                  <button id="project1DialogOption2">
+                    Acessar Repositório
+                  </button>
                 </a>
               </div>
             </div>
@@ -361,7 +367,9 @@
           <div class="dialogContainer">
             <div class="rightSideContainer">
               <div class="nameDialogContainer">
-                <h2 class="nameProjectDialog">Landing Page Manga</h2>
+                <h2 class="nameProjectDialog" id="projectDialogTitle2">
+                  Landing Page Manga
+                </h2>
                 <a class="closeButton" onclick="closeDialog('dialog2')">
                   <p class="closeIcon">X</p>
                 </a>
@@ -369,7 +377,7 @@
 
               <div class="descriptionDialogContainer">
                 <div>
-                  <p>
+                  <p id="project2DialogDescription1">
                     Landing Page Manga é um projeto para treinar conceitos de
                     landing page utilizando tecnologias front-end, o projeto
                     contém descrições de páginas, links de seções e
@@ -378,7 +386,7 @@
                 </div>
 
                 <div>
-                  <p>
+                  <p id="project2DialogDescription2">
                     O projeto foi desenvolvido com as seguintes tecnologias:
                   </p>
                 </div>
@@ -401,11 +409,13 @@
 
               <div class="dialogButtonProjects">
                 <a href="https://lucasn5.github.io/Landing_Page-Manga/">
-                  <button>Acessar Projeto</button>
+                  <button id="project2DialogOption1">Acessar Projeto</button>
                 </a>
 
                 <a href="https://github.com/LucasN5/Landing_Page-Manga">
-                  <button>Acessar Repositório</button>
+                  <button id="project2DialogOption2">
+                    Acessar Repositório
+                  </button>
                 </a>
               </div>
             </div>
@@ -416,7 +426,9 @@
           <div class="dialogContainer">
             <div class="rightSideContainer">
               <div class="nameDialogContainer">
-                <h2 class="nameProjectDialog">GitHub Finder User</h2>
+                <h2 class="nameProjectDialog" id="projectDialogTitle3">
+                  Buscador de Usuário GitHub
+                </h2>
                 <a class="closeButton" onclick="closeDialog('dialog3')">
                   <p class="closeIcon">X</p>
                 </a>
@@ -424,7 +436,7 @@
 
               <div class="descriptionDialogContainer">
                 <div>
-                  <p>
+                  <p id="project3DialogDescription1">
                     GitHub Finder User é um projeto para treinamento de consumo
                     de API, o projeto utiliza a API do github para fazer
                     requisições de busca de usuários, caso seja encontrado o
@@ -435,7 +447,7 @@
                 </div>
 
                 <div>
-                  <p>
+                  <p id="project3DialogDescription2">
                     O projeto foi desenvolvido com as seguintes tecnologias:
                   </p>
                 </div>
@@ -461,10 +473,12 @@
 
               <div class="dialogButtonProjects">
                 <a href="https://github-finder-rho-tawny.vercel.app/">
-                  <button>Acessar Projeto</button>
+                  <button id="project3DialogOption1">Acessar Projeto</button>
                 </a>
                 <a href="https://github.com/LucasN5/Github_finder">
-                  <button>Acessar Repositório</button>
+                  <button id="project3DialogOption2">
+                    Acessar Repositório
+                  </button>
                 </a>
               </div>
             </div>
@@ -475,7 +489,9 @@
           <div class="dialogContainer">
             <div class="rightSideContainer">
               <div class="nameDialogContainer">
-                <h2 class="nameProjectDialog">NLW - Copa</h2>
+                <h2 class="nameProjectDialog" id="projectDialogTitle4">
+                  NLW - Copa
+                </h2>
                 <a class="closeButton" onclick="closeDialog('dialog4')">
                   <p class="closeIcon">X</p>
                 </a>
@@ -483,7 +499,7 @@
 
               <div class="descriptionDialogContainer">
                 <div>
-                  <p>
+                  <p id="project4DialogDescription1">
                     NLW - Copa é um projeto feito durante o evento NLW
                     subsidiado pela Rocketseat, o projeto treina conceitos de
                     HTML, CSS e Javascript em uma aplicação que demonstra os
@@ -493,7 +509,7 @@
                 </div>
 
                 <div>
-                  <p>
+                  <p id="project4DialogDescription2">
                     O projeto foi desenvolvido com as seguintes tecnologias:
                   </p>
                 </div>
@@ -513,10 +529,12 @@
 
               <div class="dialogButtonProjects">
                 <a href="https://lucasn5.github.io/NLW-Copa/">
-                  <button>Acessar Projeto</button>
+                  <button id="project4DialogOption1">Acessar Projeto</button>
                 </a>
                 <a href="https://github.com/LucasN5/NLW-Copa">
-                  <button>Acessar Repositório</button>
+                  <button id="project4DialogOption2">
+                    Acessar Repositório
+                  </button>
                 </a>
               </div>
             </div>
@@ -527,7 +545,9 @@
           <div class="dialogContainer">
             <div class="rightSideContainer">
               <div class="nameDialogContainer">
-                <h2 class="nameProjectDialog">Lista de Afazeres</h2>
+                <h2 class="nameProjectDialog" id="projectDialogTitle5">
+                  Lista de Afazeres
+                </h2>
                 <a class="closeButton" onclick="closeDialog('dialog5')">
                   <p class="closeIcon">X</p>
                 </a>
@@ -535,7 +555,7 @@
 
               <div class="descriptionDialogContainer">
                 <div>
-                  <p>
+                  <p id="project5DialogDescription1">
                     Lista de Afazeres é um projeto que permite ao usuário criar
                     tarefas com a opção de definir um tipo, filtrá-las por
                     status (concluídas, completas ou incompletas), pesquisá-las
@@ -546,7 +566,7 @@
                 </div>
 
                 <div>
-                  <p>
+                  <p id="project5DialogDescription2">
                     O projeto foi desenvolvido com as seguintes tecnologias:
                   </p>
                 </div>
@@ -567,11 +587,13 @@
 
               <div class="dialogButtonProjects">
                 <a href="https://to-do-list-beta-silk.vercel.app/">
-                  <button>Acessar Projeto</button>
+                  <button id="project5DialogOption1">Acessar Projeto</button>
                 </a>
 
                 <a href="https://github.com/LucasN5/ToDo-List">
-                  <button>Acessar Repositório</button>
+                  <button id="project5DialogOption2">
+                    Acessar Repositório
+                  </button>
                 </a>
               </div>
             </div>
@@ -582,7 +604,9 @@
           <div class="dialogContainer">
             <div class="rightSideContainer">
               <div class="nameDialogContainer">
-                <h2 class="nameProjectDialog">This Portfolio</h2>
+                <h2 class="nameProjectDialog" id="projectDialogTitle6">
+                  Portfolio
+                </h2>
                 <a class="closeButton" onclick="closeDialog('dialog6')">
                   <p class="closeIcon">X</p>
                 </a>
@@ -590,15 +614,15 @@
 
               <div class="descriptionDialogContainer">
                 <div>
-                  <p>
+                  <p id="project6DialogDescription1">
                     Este portfolio é um projeto que tem como objetivo mostrar
                     meu perfil profissional com descrições, habilidades
-                    técnicas, certificados, projetos e meios de contato
+                    técnicas, certificados, projetos e meios de contato.
                   </p>
                 </div>
 
                 <div>
-                  <p>
+                  <p id="project6DialogDescription2">
                     O projeto foi desenvolvido com as seguintes tecnologias:
                   </p>
                 </div>
@@ -621,7 +645,9 @@
 
               <div class="dialogButtonProjects">
                 <a href="https://github.com/LucasN5/Portfolio">
-                  <button>Acessar Repositório</button>
+                  <button id="project6DialogOption2">
+                    Acessar Repositório
+                  </button>
                 </a>
               </div>
             </div>
@@ -630,7 +656,7 @@
       </div>
 
       <div class="skills" id="linkSkills">
-        <h3 data-aos="fade-up">Habilidades</h3>
+        <h3 data-aos="fade-up" id="skillsTitle">Habilidades</h3>
         <div class="containerSkills" data-aos="fade-up" data-aos-delay="400">
           <div>
             <p>HTML</p>
@@ -685,7 +711,12 @@
       </div>
 
       <div class="certificate" id="linkCertifications">
-        <h3 class="tittleCertificate" data-aos="fade-up" data-aos-delay="600">
+        <h3
+          class="tittleCertificate"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          id="certificateTitle"
+        >
           Certificados
         </h3>
 
@@ -696,57 +727,72 @@
         >
           <ul>
             <li>
-              <h3 class="certificationTittle">
+              <h3 class="certificationTittle" id="certification1Title">
                 Graduação Análise e Desenvolvimento de Sistemas
               </h3>
-              <p>
+              <p id="certification1Text1">
                 Graduação em ensino de superior do curso Análise e
                 Desenvolvimento de Sistemas
               </p>
-              <a id="linkCertification" href="#">Em andamento. . .</a>
-              <span class="dateCertification">Julho 2026</span>
+              <a id="certification1Text2" href="#">Em andamento. . .</a>
+              <span class="dateCertification" id="certification1Text3"
+                >Julho 2026</span
+              >
               <span class="circleCertification"></span>
             </li>
 
             <li>
-              <h3 class="certificationTittle">
+              <h3 class="certificationTittle" id="certification2Title">
                 Graduação Ciências da Computação
               </h3>
-              <p>
+              <p id="certification2Text1">
                 Graduação em ensino de superior do curso Ciências da Computação
               </p>
               <a
                 href="https://www.linkedin.com/in/lucasdasilvanunes/overlay/1716984789489/single-media-viewer?type=DOCUMENT&profileId=ACoAADRljNwBXz0j1o8TQqtI2WjdCyCN52poqts&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7a0ey10pRm6V2DaAulOL7g%3D%3D"
+                id="certification2Text2"
                 >Ver certificado</a
               >
-              <span class="dateCertification">Dezembro 2023</span>
+              <span class="dateCertification" id="certification2Text3"
+                >Dezembro 2023</span
+              >
               <span class="circleCertification"></span>
             </li>
 
             <li>
-              <h3 class="certificationTittle">
+              <h3 class="certificationTittle" id="certification3Title">
                 Formação Especializar | Rocketseat
               </h3>
-              <p>Curso sobre conhecimentos gerais de programação web</p>
+              <p id="certification3Text1">
+                Curso sobre conhecimentos gerais de programação web
+              </p>
               <a
                 href="https://app.rocketseat.com.br/certificates/565063d1-17f3-458b-b5e1-4e666eb4a4fa"
+                id="certification3Text2"
                 >Ver certificado</a
               >
-              <span class="dateCertification">Julho 2023</span>
+              <span class="dateCertification" id="certification3Text3"
+                >Julho 2023</span
+              >
               <span class="circleCertification"></span>
             </li>
 
             <li>
-              <h3 class="certificationTittle">Formação Front-end | Alura</h3>
-              <p>
+              <h3 class="certificationTittle" id="certification4Title">
+                Formação Front-end | Alura
+              </h3>
+              <p id="certification4Text1">
                 Curso sobre ferramentas e projetos web voltado para programação
                 front-end
               </p>
               <a
                 href="https://cursos.alura.com.br/degree/certificate/e1418654-8900-41f1-a615-2b5e4a9324d2"
+                id="certification4Text2"
                 >Ver certificado</a
               >
-              <span class="dateCertification">Junho 2022</span>
+              <span class="dateCertification" id="certification4Text3"
+                >Junho 2022</span
+              >
               <span class="circleCertification"></span>
             </li>
           </ul>
@@ -754,7 +800,9 @@
       </div>
 
       <div class="contact" id="linkContact">
-        <h3 data-aos="fade-up" data-aos-delay="400">Contato</h3>
+        <h3 data-aos="fade-up" data-aos-delay="400" id="contactTitle">
+          Contato
+        </h3>
 
         <div class="contactForm" data-aos="fade-up" data-aos-delay="400">
           <form class="containerForm" id="form" method="POST">
@@ -769,6 +817,7 @@
               type="text"
               name="nome"
               placeholder="Seu nome"
+              id="inputPlaceholderName"
               required
             />
             <input
@@ -776,6 +825,7 @@
               type="text"
               name="email"
               placeholder="Seu melhor email"
+              id="inputPlaceholderEmail"
               required
             />
             <input
@@ -783,6 +833,7 @@
               type="text"
               name="assunto"
               placeholder="Digite o assunto"
+              id="inputPlaceholderText1"
               required
             />
             <textarea
@@ -808,13 +859,15 @@
     <footer>
       <div class="footerContainer">
         <p>
-          Copyright @ 2024 <span class="colorName">Lucas Nunes</span>. Todos os
-          direitos reservados.
+          Copyright @ 2024 <span class="colorName">Lucas Nunes</span>.
+          <span id="footerText">Todos os direitos reservados.</span>
         </p>
       </div>
     </footer>
     <script>
       AOS.init();
     </script>
+
+    <script src="./src/js/changeLang.js"></script>
   </body>
 </html>

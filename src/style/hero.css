@@ -74,7 +74,7 @@ html {
 }
 
 .dropdown {
-  display: inline-block;
+  display: relative;
 }
 
 .dropdown button {
@@ -125,11 +125,7 @@ html {
   background-color: var();
 }
 
-.dropdownOption1:hover {
-  background-color: var(--form-box-color);
-}
-
-.dropdownOption2:hover {
+.dropdownContent > a:hover {
   background-color: var(--form-box-color);
 }
 

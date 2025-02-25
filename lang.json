@@ -1,0 +1,191 @@
+{
+  "br": {
+    "heroNav": "Ínicio",
+    "aboutNav": "Sobre mim",
+    "projectsNav": "Projetos",
+    "skillsNav": "Habilidades",
+    "certificateNav": "Certificados",
+    "contactNav": "Contato",
+    "heroSubtitle": "Desenvolvedor Front-end",
+
+    "aboutTitle": "Sobre mim",
+    "aboutSubtitle": "Transformando ideias em soluções digitais",
+    "aboutCardTitle1": "Tecnologias Dominadas",
+    "aboutCardTitle2": "Anos de Experiência",
+    "aboutCardTitle3": "Commits Feitos",
+    "aboutCardTitle4": "Cursos Concluídos",
+    "aboutText1": "Tenho paixão por criar designs elegantes e desenvolver soluções inteligentes para desafios complexos. Com 2 anos de experiência adquirida por meio de projetos pessoais em desenvolvimento web, estou sempre buscando aprender e me especializar para alcançar meu objetivo de me tornar um profissional de excelência.",
+    "aboutText2": "Minha jornada na programação começou com a curiosidade de entender como os jogos eram criados. Esse interesse me levou a explorar o mundo do código, descobrir minha vocação e, eventualmente, me apaixonar pelo desenvolvimento front-end.",
+
+    "projectTitle": "Projetos",
+    "projectCardTitle1": "Clima Tempo App",
+    "projectCardTitle2": "Landing Page Manga",
+    "projectCardTitle3": "Buscador de Usuário GitHub",
+    "projectCardTitle4": "NLW - Copa",
+    "projectCardTitle5": "Lista de Afazeres",
+    "projectCardTitle6": "Portfolio",
+
+    "projectDialogTitle1": "Clima Tempo App",
+    "project1DialogDescription1": "Clima Tempo App é um projeto web que consome uma API chamada open weather e que tem como objetivo demonstrar a temperatura, humidade e velocidade do vento em cidades e paises.",
+    "project1DialogDescription2": "projeto foi desenvolvido com as seguintes tecnologias:",
+    "project1DialogOption1": "Acessar Projeto",
+    "project1DialogOption2": "Acessar Repositório",
+
+    "projectDialogTitle2": "Landing Page Manga",
+    "project2DialogDescription1": "Landing Page Manga é um projeto para treinar conceitos de landing page utilizando tecnologias front-end, o projeto contém descrições de páginas, links de seções e responsividade.",
+    "project2DialogDescription2": "O projeto foi desenvolvido com as seguintes tecnologias:",
+    "project2DialogOption1": "Acessar Projeto",
+    "project2DialogOption2": "Acessar Repositório",
+
+    "projectDialogTitle3": "Buscador de Usuário GitHub",
+    "project3DialogDescription1": "GitHub Finder User é um projeto para treinamento de consumo de API, o projeto utiliza a API do github para fazer requisições de busca de usuários, caso seja encontrado o usuário, é demonstrado o local onde reside, número de seguidores e quantos usuários ele segue. Todas essas informações são obtidas por meio da API do GitHub",
+    "project3DialogDescription2": "O projeto foi desenvolvido com as seguintes tecnologias:",
+    "project3DialogOption1": "Acessar Projeto",
+    "project3DialogOption2": "Acessar Repositório",
+
+    "projectDialogTitle4": "NLW - Copa",
+    "project4DialogDescription1": "NLW - Copa é um projeto feito durante o evento NLW subsidiado pela Rocketseat, o projeto treina conceitos de HTML, CSS e Javascript em uma aplicação que demonstra os horários, datas e adversários que o Brasil enfrentou durante a Copa do Mundo de 2022.",
+    "project4DialogDescription2": "O projeto foi desenvolvido com as seguintes tecnologias:",
+    "project4DialogOption1": "Acessar Projeto",
+    "project4DialogOption2": "Acessar Repositório",
+
+    "projectDialogTitle5": "Lista de Afazeres",
+    "project5DialogDescription1": "Lista de Afazeres é um projeto que permite ao usuário criar tarefas com a opção de definir um tipo, filtrá-las por status (concluídas, completas ou incompletas), pesquisá-las por nome, marcar tarefas como concluídas ou excluí-las, além de organizar a lista de tarefas em ordem ascendente ou descendente.",
+    "project5DialogDescription2": "O projeto foi desenvolvido com as seguintes tecnologias:",
+    "project5DialogOption1": "Acessar Projeto",
+    "project5DialogOption2": "Acessar Repositório",
+
+    "projectDialogTitle6": "Portfolio",
+    "project6DialogDescription1": "Este portfolio é um projeto que tem como objetivo mostrar meu perfil profissional com descrições, habilidades técnicas, certificados, projetos e meios de contato.",
+    "project6DialogDescription2": "O projeto foi desenvolvido com as seguintes tecnologias:",
+    "project6DialogOption2": "Acessar Repositório",
+
+    "skillsTitle": "Habilidades",
+
+    "certificateTitle": "Certificados",
+    "certification1Title": "Graduação Análise e Desenvolvimento de Sistemas",
+    "certification1Text1": "Graduação em ensino de superior do curso Análise e Desenvolvimento de Sistemas",
+    "certification1Text2": "Em andamento. . .",
+    "certification1Text3": "Julho 2026",
+
+    "certification2Title": "Graduação Ciências da Computação",
+    "certification2Text1": "Graduação em ensino superior do curso Ciências da Computação",
+    "certification2Text2": "Ver certificado",
+    "certification2Text3": "Dezembro 2023",
+
+    "certification3Title": "Formação Especializar | Rocketseat",
+    "certification3Text1": "Curso sobre conhecimentos gerais de programação web",
+    "certification3Text2": "Ver certificado",
+    "certification3Text3": "Julho 2023",
+
+    "certification4Title": "Formação Front-end | Alura",
+    "certification4Text1": "Curso sobre ferramentas e projetos web voltados para programação front-end",
+    "certification4Text2": "Ver certificado",
+    "certification4Text3": "Junho 2022",
+
+    "contactTitle": "Contato",
+
+    "inputPlaceholderName": "Seu nome",
+    "inputPlaceholderEmail": "Seu melhor email",
+    "inputPlaceholderText1": "Digite o assunto",
+    "messageForm": "Sua mensagem",
+    "buttonForm": "Enviar Mensagem",
+
+    "footerText": "Todos os direitos reservados."
+  },
+
+  "en": {
+    "heroNav": "Home",
+    "aboutNav": "About Me",
+    "projectsNav": "Projects",
+    "skillsNav": "Skills",
+    "certificateNav": "Certificates",
+    "contactNav": "Contact",
+    "heroSubtitle": "Front-end Developer",
+
+    "aboutTitle": "About Me",
+    "aboutSubtitle": "Transforming ideas into digital solutions",
+    "aboutCardTitle1": "Mastered Technologies",
+    "aboutCardTitle2": "Years of Experience",
+    "aboutCardTitle3": "Commits Made",
+    "aboutCardTitle4": "Completed Courses",
+    "aboutText1": "I have a passion for creating elegant designs and developing smart solutions for complex challenges. With 2 years of experience gained through personal projects in web development, I am always striving to learn and specialize to achieve my goal of becoming an excellent professional.",
+    "aboutText2": "My journey in programming started with curiosity about how games were created. This interest led me to explore the world of coding, discover my calling, and eventually fall in love with front-end development.",
+
+    "projectTitle": "Projects",
+    "projectCardTitle1": "Weather App",
+    "projectCardTitle2": "Manga Landing Page",
+    "projectCardTitle3": "GitHub User Finder",
+    "projectCardTitle4": "NLW - World Cup",
+    "projectCardTitle5": "To-Do List",
+    "projectCardTitle6": "Portfolio",
+
+    "projectDialogTitle1": "Weather App",
+    "project1DialogDescription1": "Weather App is a web project that consumes an API called OpenWeather, aiming to display temperature, humidity, and wind speed in cities and countries.",
+    "project1DialogDescription2": "The project was developed using the following technologies:",
+    "project1DialogOption1": "Access Project",
+    "project1DialogOption2": "Access Repository",
+
+    "projectDialogTitle2": "Manga Landing Page",
+    "project2DialogDescription1": "Manga Landing Page is a project for practicing landing page concepts using front-end technologies. The project includes page descriptions, section links, and responsiveness.",
+    "project2DialogDescription2": "The project was developed using the following technologies:",
+    "project2DialogOption1": "Access Project",
+    "project2DialogOption2": "Access Repository",
+
+    "projectDialogTitle3": "GitHub User Finder",
+    "project3DialogDescription1": "GitHub User Finder is a project for training API consumption. The project uses the GitHub API to search for users. If a user is found, it displays their location, number of followers, and the number of people they follow. All this information is obtained through the GitHub API.",
+    "project3DialogDescription2": "The project was developed using the following technologies:",
+    "project3DialogOption1": "Access Project",
+    "project3DialogOption2": "Access Repository",
+
+    "projectDialogTitle4": "NLW - World Cup",
+    "project4DialogDescription1": "NLW - World Cup is a project created during the NLW event by Rocketseat. The project practices HTML, CSS, and JavaScript concepts in an application that displays match schedules, dates, and Brazil's opponents during the 2022 FIFA World Cup.",
+    "project4DialogDescription2": "The project was developed using the following technologies:",
+    "project4DialogOption1": "Access Project",
+    "project4DialogOption2": "Access Repository",
+
+    "projectDialogTitle5": "To-Do List",
+    "project5DialogDescription1": "To-Do List is a project that allows users to create tasks with the option to define a type, filter them by status (completed, pending, or incomplete), search for tasks by name, mark tasks as completed, delete them, and organize the task list in ascending or descending order.",
+    "project5DialogDescription2": "The project was developed using the following technologies:",
+    "project5DialogOption1": "Access Project",
+    "project5DialogOption2": "Access Repository",
+
+    "projectDialogTitle6": "Portfolio",
+    "project6DialogDescription1": "This portfolio is a project designed to showcase my professional profile, including descriptions, technical skills, certificates, projects, and contact information.",
+    "project6DialogDescription2": "The project was developed using the following technologies:",
+    "project6DialogOption2": "Access Repository",
+
+    "skillsTitle": "Skills",
+
+    "certificateTitle": "Certificates",
+    "certification1Title": "Bachelor's Degree in Systems Analysis and Development",
+    "certification1Text1": "Higher education degree in Systems Analysis and Development",
+    "certification1Text2": "In progress...",
+    "certification1Text3": "July 2026",
+
+    "certification2Title": "Bachelor's Degree in Computer Science",
+    "certification2Text1": "Higher education degree in Computer Science",
+    "certification2Text2": "View Certificate",
+    "certification2Text3": "December 2023",
+
+    "certification3Title": "Specialization Program | Rocketseat",
+    "certification3Text1": "Course covering general knowledge of web programming",
+    "certification3Text2": "View Certificate",
+    "certification3Text3": "July 2023",
+
+    "certification4Title": "Front-end Development Program | Alura",
+    "certification4Text1": "Course on tools and web projects focused on front-end development",
+    "certification4Text2": "View Certificate",
+    "certification4Text3": "June 2022",
+
+    "contactTitle": "Contact",
+
+    "inputPlaceholderName": "Your name",
+    "inputPlaceholderEmail": "Your best email",
+    "inputPlaceholderText1": "Type the subject",
+    "messageForm": "Your message",
+    "buttonForm": "Send Message",
+
+    "footerText": "All rights reserved"
+  }
+}

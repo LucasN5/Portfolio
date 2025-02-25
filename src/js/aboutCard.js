@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cardCount1++;
     cardNumber1.innerHTML = cardCount1;
-  }, 100);
+  }, 400);
 
   const intervalCard2 = setInterval(() => {
     if (cardCount2 >= 2) {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cardCount2++;
     cardNumber2.innerHTML = cardCount2;
-  }, 100);
+  }, 1200);
 
   const intervalCard3 = setInterval(() => {
     if (cardCount3 >= 195) {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cardCount3++;
     cardNumber3.innerHTML = cardCount3;
-  }, 100);
+  }, 30);
 
   const intervalCard4 = setInterval(() => {
     if (cardCount4 >= 22) {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cardCount4++;
     cardNumber4.innerHTML = cardCount4;
-  }, 100);
+  }, 150);
 });
 
 /* card1 = 10 card 2 = 2 card 3 = 195 card 4 = 22*/
