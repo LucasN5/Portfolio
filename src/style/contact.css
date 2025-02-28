@@ -1,6 +1,10 @@
 .contact {
   background-color: var(--body-color-black-dark);
-  height: 90vh;
+  height: auto;
+  padding: 120px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .contact > h3 {
@@ -9,7 +13,6 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  padding: 3rem;
 }
 
 .containerForm {
@@ -21,7 +24,7 @@
 }
 
 .inputForm {
-  width: 35rem;
+  width: 40%;
   height: 2rem;
   padding: 5px;
   border-radius: 5px;
@@ -62,7 +65,7 @@
 }
 
 #messageForm {
-  width: 35rem;
+  width: 40%;
   height: 10rem;
   border-radius: 5px;
   border-style: none;
@@ -106,8 +109,49 @@
   height: 4rem;
   font-family: "Montserrat";
   font-weight: 500;
+  padding-inline: 20px;
 }
 
 .colorName {
   color: var(--text-color-purple-light);
+}
+
+@media (max-width: 1500px) {
+  .inputForm {
+    width: 50%;
+  }
+
+  #messageForm {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .inputForm {
+    width: 60%;
+  }
+
+  #messageForm {
+    width: 60%;
+  }
+}
+
+@media (max-width: 860px) {
+  .inputForm {
+    width: 70%;
+  }
+
+  #messageForm {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputForm {
+    width: 80%;
+  }
+
+  #messageForm {
+    width: 80%;
+  }
 }

@@ -1,6 +1,10 @@
 .projects {
   background-color: var(--body-color-black-light);
-  height: 110vh;
+  height: auto;
+  padding: 140px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .projects > h3 {
@@ -9,13 +13,12 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  padding: 3rem;
 }
 
 .projectsContainer {
   display: grid;
   flex-direction: column;
-  grid-template-columns: 350px 350px 350px;
+  grid-template-columns: 500px 500px 500px;
   grid-gap: 35px;
   height: 70vh;
   justify-content: center;
@@ -38,8 +41,8 @@
 }
 
 .projectsContainer > div:hover {
-  transform: scale(1.5);
-  z-index: 10; /* Eleva o card em foco sobre os outros */
+  transform: scale(1.3);
+  z-index: 10;
 }
 
 .projectsContainer > div::before {
@@ -55,6 +58,59 @@
 }
 
 .projectsContainer > div:hover::before {
+  opacity: 0;
+}
+
+/* Project Images */
+
+.weatherImage {
+  background-image: url(../img/ClimaTempoApp.png);
+}
+
+.finderImage {
+  background-image: url(../img/GitHubFinder.png);
+}
+
+.mangaImage {
+  background-image: url(../img/LandingPageManga.png);
+}
+
+.copaImage {
+  background-image: url(../img/NLWCopa.png);
+}
+
+.listImage {
+  background-image: url(../img/ToDoList.png);
+}
+
+.projectsContainer > div p,
+.projectsContainer > div img {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.projectsContainer > div p {
+  cursor: default;
+  color: var(--whiter);
+  font-family: "Montserrat";
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.projectsContainer > div img {
+  width: 25px;
+  height: 25px;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+
+.projectsContainer > div:hover p,
+.projectsContainer > div:hover img {
   opacity: 0;
 }
 
@@ -271,13 +327,14 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding: 15px;
 }
 
 .dialogProjectImage {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 
@@ -303,55 +360,70 @@
   background-color: var(--border-header-dark);
 }
 
-/* Project Images */
-
-.weatherImage {
-  background-image: url(../img/ClimaTempoApp.png);
+@media (max-width: 1610px) {
+  .projectsContainer {
+    grid-template-columns: 500px 500px;
+    height: 100vh;
+  }
 }
 
-.finderImage {
-  background-image: url(../img/GitHubFinder.png);
+@media (max-width: 1050px) {
+  .dialogContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .leftSideContainer {
+    width: 100%;
+  }
+
+  .rightSideContainer {
+    width: 100%;
+  }
+
+  #dialog1 {
+    height: 100%;
+  }
+
+  #dialog2 {
+    height: 100%;
+  }
+
+  #dialog3 {
+    height: 100%;
+  }
+
+  #dialog4 {
+    height: 100%;
+  }
+
+  #dialog5 {
+    height: 100%;
+  }
+
+  #dialog6 {
+    height: 100%;
+  }
 }
 
-.mangaImage {
-  background-image: url(../img/LandingPageManga.png);
-}
+@media (max-width: 1060px) {
+  .projectsContainer {
+    grid-template-columns: 500px;
+    height: 200vh;
+  }
 
-.copaImage {
-  background-image: url(../img/NLWCopa.png);
-}
+  @media (max-width: 590px) {
+    .projectsContainer {
+      grid-template-columns: 400px;
+      height: 200vh;
+    }
+  }
 
-.listImage {
-  background-image: url(../img/ToDoList.png);
-}
-
-.projectsContainer > div p,
-.projectsContainer > div img {
-  position: relative;
-  z-index: 2;
-  transition: opacity 0.3s ease;
-}
-
-.projectsContainer > div p {
-  cursor: default;
-  color: var(--whiter);
-  font-family: "Montserrat";
-  text-align: center;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
-}
-
-.projectsContainer > div img {
-  width: 25px;
-  height: 25px;
-}
-
-.iconContainer {
-  display: flex;
-  gap: 5px;
-  position: relative;
-}
-
-.projectsContainer > div:hover p,
-.projectsContainer > div:hover img {
-  opacity: 0;
+  @media (max-width: 470px) {
+    .projectsContainer {
+      grid-template-columns: 300px;
+      height: 200vh;
+    }
+  }
 }

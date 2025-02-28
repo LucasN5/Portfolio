@@ -27,6 +27,7 @@
     <script src="./src/js/projectsCard.js"></script>
     <script src="./src/js/animateScroll.js"></script>
     <script src="./src/js/aboutCard.js"></script>
+    <script defer src="./src/js/changeLang.js"></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
@@ -42,7 +43,7 @@
   <body>
     <header>
       <nav class="navBar_style">
-        <div>
+        <div id="logoNav">
           <img
             data-aos="fade-left"
             data-aos-delay="400"
@@ -50,7 +51,11 @@
           />
         </div>
 
-        <div>
+        <button class="hamburguer">
+          <span></span>
+        </button>
+
+        <div id="navList">
           <a
             id="heroNav"
             data-aos="fade-left"
@@ -124,7 +129,7 @@
           <ul class="contactIcons">
             <li
               id="linkCv"
-              data-url="./src/img/Versão melhorada CV - Lucas da Silva Nunes (1).pdf"
+              data-url="./src/img/CV  - - Lucas da Silva Nunes.pdf"
             >
               <img src="./src/svg/cv.svg" />
             </li>
@@ -149,7 +154,7 @@
         </div>
 
         <div class="profile_pic" data-aos="fade-up" data-aos-delay="400">
-          <img class="photo" src="./src/img/pfpPortfolio2.png" />
+          <img class="photo" src="./src/img/pfpProfile.png" />
         </div>
       </div>
 
@@ -864,10 +869,10 @@
         </p>
       </div>
     </footer>
+
+    <script defer src="./src/js/hamburguerMenu.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <script src="./src/js/changeLang.js"></script>
   </body>
 </html>

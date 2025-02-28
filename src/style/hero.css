@@ -20,19 +20,19 @@ html {
   --form-text-color: #bfb7b7;
 }
 
+/* Navbar*/
+
 .navBar_style {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 200px;
+  justify-content: space-around;
   border-bottom: solid var(--text-color-purple-dark);
   background-color: var(--body-color-black-dark);
   height: 3rem;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
   position: fixed;
-  z-index: 1000;
 }
 
 .navBar_style > div > img {
@@ -46,9 +46,78 @@ html {
   color: var(--whiter);
   font-family: "Montserrat";
   font-weight: 500;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-inline: 10px;
 }
+
+.navBar_style #logoNav {
+  order: 0;
+}
+
+.navBar_style .hamburguer {
+  order: 1;
+}
+
+.navBar_style .dropdown {
+  order: 2;
+}
+
+/* Hamburguer */
+
+.hamburguer {
+  display: none;
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.hamburguer::before,
+.hamburguer::after,
+.hamburguer span {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--whiter);
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburguer span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburguer::before {
+  top: 0;
+}
+
+.hamburguer::after {
+  bottom: 0;
+}
+
+.hamburguer.active span {
+  opacity: 0;
+}
+
+.hamburguer.active::before {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.hamburguer.active::after {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+#navList {
+  display: flex;
+  gap: 20px;
+}
+
+/* Transition animation */
 
 #heroNav,
 #aboutNav,
@@ -144,14 +213,16 @@ hr {
   height: 2px;
 }
 
+/* Hero section*/
+
 .hero {
   background-color: var(--body-color-black-light);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
-  margin-top: 3rem;
+  height: auto;
+  padding: 250px 0px;
 }
 
 .description > h1 {
@@ -208,4 +279,61 @@ hr {
 
 ::-webkit-scrollbar-thumb {
   background: var(--text-color-purple-dark);
+}
+
+/* Responsivite*/
+
+@media (max-width: 1200px) {
+  .hamburguer {
+    display: block;
+  }
+
+  #navList {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    background-color: var(--body-color-black-dark);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid var(--text-color-purple-dark);
+  }
+
+  #navList.active {
+    display: flex;
+  }
+
+  .navBar_style #logoNav {
+    order: 1;
+  }
+
+  .navBar_style .hamburguer {
+    order: 0;
+  }
+
+  .navBar_style .dropdown {
+    order: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 180px 0px;
+    gap: 3rem;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactIcons {
+    gap: 10px;
+  }
 }

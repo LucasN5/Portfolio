@@ -1,6 +1,11 @@
 .skills {
   background-color: var(--body-color-black-dark);
-  height: 100vh;
+  height: auto;
+  padding: 150px 0px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
 }
 
 .skills > h3 {
@@ -9,7 +14,6 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  padding: 5rem;
 }
 
 .cardSkills {
@@ -61,4 +65,14 @@
 .iconSkills {
   width: 48px;
   height: 48px;
+}
+
+@media (max-width: 1024px) {
+  .containerSkills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 50px;
+    justify-content: center;
+    padding-inline: 50px;
+  }
 }
