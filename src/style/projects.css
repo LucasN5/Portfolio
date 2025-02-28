@@ -83,6 +83,10 @@
   background-image: url(../img/ToDoList.png);
 }
 
+.portfolioImage {
+  background-image: url(../img/Portfolio.png);
+}
+
 .projectsContainer > div p,
 .projectsContainer > div img {
   position: relative;
